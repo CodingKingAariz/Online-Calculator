@@ -1,47 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
 body {
-  color: rgb(2, 7, 17);
-  text-align: center;
-  background-color: rgb(212, 222, 230);
-  height: 100px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #0a0a0a, #3a443a);
+}
+.Calculator {
+  border: 1px solid #717377;
   padding: 20px;
-  margin: 40px;
-  font-family: "Segoe UI", "Segoe WP", system-ui, Arial, Sans-Serif;
-  font-size: 14px;
-}
-h1 {
-  font-size: 60px;
+  width: 390px;
+  border-radius: 16px;
+  background: transparent;
+  box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
 }
 
-h2 {
-  font-size: 55px;
-}
-
-h3 {
-  font-size: 22px;
-}
-
-h4 {
-  font-size: 21px;
-}
-
-h5 {
-  font-size: 25px;
-}
 input {
-  width: 100px;
-  height: 50px;
-  font-size: 25px;
-  margin: 5px;
-  background-color: rgb(255, 254, 254);
-  color: rgb(11, 58, 141);
-  border-style: groove;
-  border: 20px;
-  border-radius: 10px;
-}
-.mytext {
-  width: 450px;
+  width: 100%;
+  border: none;
+  padding: 24px;
+  margin: 10px;
+  background-color: transparent;
+  box-sizing: 0px 3px 15px rgba(84, 84, 84, 0.1);
+  font-size: 40px;
+  text-align: right;
+  cursor: pointer;
+  color: #ffffff;
 }
 
-.Text {
-  width: 480px;
+input::placeholder {
+  color: #ffffff;
+  text-align: left;
+}
+
+button {
+  border: none;
+  width: 60px;
+  height: 60px;
+  margin: 11.8px;
+  border-radius: 50%;
+  background: transparent;
+  color: #ffffff;
+  font-size: 20px;
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1);
+}
+
+.equalBtn {
+  background-color: #fb7c14;
+}
+
+.operator {
+  color: #6dee0a;
+}
+
+.AC {
+  color: #6dee0a;
+}
+
+.DEL {
+  color: #6dee0a;
 }
